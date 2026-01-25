@@ -18,12 +18,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 subtitle: Data Science <span style="color:#f58506"> Portfolio </span>
 location: "Austin, TX"
 resume_url: /docs/Andrew_Gaytan_Resume_01-25-2026.docx
-avatar_image: /img/profile_picture.JPG
+avatar_image: /img/profile_picture.jpg
 
 #-------------------------------
 # Contact links
-linkedln: "https://linkedln.com/#" # Add your linkedln handle
-github: "https://github.com/#"  # Add your github handle
+linkedln: "www.linkedin.com/in/andrewgaytan/" # Add your linkedln handle
+github: "https://andrewgaytangh.github.io/"  # Add your github handle
 
 paginate: 6
 paginate_path: "/page/:num"
@@ -51,5 +51,6 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
 
