@@ -25,7 +25,7 @@ avatar_image: /img/profile_picture.jpg
 linkedln: "www.linkedin.com/in/andrewgaytan/" # Add your linkedln handle
 github: "https://andrewgaytangh.github.io/"  # Add your github handle
 
-paginate: 6
+paginate: 10
 paginate_path: "/page/:num"
 
 sass:
@@ -51,6 +51,7 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
 
 
