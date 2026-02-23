@@ -5,7 +5,7 @@ image: "/posts/primes_image.jpeg"
 tags: [Python, Primes]
 ---
 
-In this post I'm going to run through a function in Python that can quickly find all the Prime numbers below a given value.  For example, if I passed the function a value of 100, it would find all the prime numbers below 100!
+In this post I'm going to run through a function in Python that can quickly find all the Prime numbers below a given value.  For example, if I passed the function a value of 100, it would find all the prime numbers below 100.
 
 If you're not sure what a Prime number is, it is a number that can only be divided wholly by itself and one so 7 is a prime number as no other numbers apart from 7 or 1 divide cleanly into it 8 is not a prime number as while eight and one divide into it, so do 2 and 4
 
@@ -106,7 +106,7 @@ print(number_range)
 
 When we look at our number range now, all values that were also present in the multiples set have been removed as we *know* they were not primes
 
-This is amazing!  We've made a massive reduction to the pool of numbers that need to be tested so this is really efficient. It also means the smallest number in our range *is a prime number* as we know nothing smaller than it divides into it...and this means we can run all that logic again from the top!
+We've made a massive reduction to the pool of numbers that need to be tested so this is really efficient. It also means the smallest number in our range *is a prime number* as we know nothing smaller than it divides into it...and this means we can run all that logic again from the top.
 
 Whenever you can run sometime over and over again, a while loop is often a good solution.
 
@@ -131,14 +131,14 @@ while number_range:
     number_range.difference_update(multiples)
 ```
 
-Let's print the primes_list to have a look at what we found!
+Let's print the primes_list to have a look at what we found.
 
 ```ruby
 print(primes_list)
 >>> [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599, 601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691, 701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809, 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997]
 ```
 
-Let's now get some interesting stats from our list which we can use to summarize our findings, the number of primes that were found, and the largest prime in the list!
+Let's now get some interesting stats from our list which we can use to summarize our findings, the number of primes that were found, and the largest prime in the list.
 
 ```ruby
 prime_count = len(primes_list)
@@ -147,9 +147,7 @@ print(f"There are {prime_count} prime numbers between 1 and {n}, the largest of 
 >>> There are 168 prime numbers between 1 and 1000, the largest of which is 997
 ```
 
-Amazing!
-
-The next thing to do would be to put it into a neat function, which you can see below:
+The next thing to do would be to put it into a function, which you can see below:
 
 ```ruby
 def primes_finder(n):
@@ -172,7 +170,7 @@ def primes_finder(n):
     print(f"There are {prime_count} prime numbers between 1 and {n}, the largest of which is {largest_prime}")
 ```
 
-Now we can jut pass the function the upper bound of our search and it will do the rest!
+Now we can jut pass the function the upper bound of our search and it will do the rest.
 
 Let's go for something large, say a million...
 
@@ -181,9 +179,6 @@ primes_finder(1000000)
 >>> There are 78498 prime numbers between 1 and 1000000, the largest of which is 999983
 ```
 
-That is pretty cool!
-
-I hoped you enjoyed learning about Primes, and one way to search for them using Python.
 
 ---
 
@@ -195,7 +190,7 @@ The pop() method will usually extract the lowest element of a Set. Sets however 
 
 This hashing method means that we can't 100% rely on it successfully getting the lowest value. In very rare cases, the hash provides a value that is not the lowest.
 
-Even though here, we're just coding up something fun - it is most definitely a useful thing to note when using Sets and pop() in Python in the future!
+Even though here, we're just coding up something fun - it is most definitely a useful thing to note when using Sets and pop() in Python in the future.
 
 The simplest solution to force the minimum value to be used is to replace the line...
 
@@ -212,6 +207,6 @@ number_range.remove(prime)
 
 ...where we firstly force the identification of the lowest number in the number_range into our prime variable, and following that we remove it.
 
-However, because we have to sort the list for each iteration of the loop in order to get the minimum value, it's slightly slower than what we saw with pop()!
+However, because we have to sort the list for each iteration of the loop in order to get the minimum value, it's slightly slower than what we saw with pop().
 
 
