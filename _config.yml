@@ -22,7 +22,7 @@ avatar_image: /img/profile_picture.jpg
 
 #-------------------------------
 # Contact links
-linkedln: "www.linkedin.com/in/andrewgaytan/" # Add your linkedln handle
+linkedln: "https://www.linkedin.com/in/andrewgaytan/" # Add your linkedln handle
 github: "https://andrewgaytangh.github.io/"  # Add your github handle
 
 paginate: 10
