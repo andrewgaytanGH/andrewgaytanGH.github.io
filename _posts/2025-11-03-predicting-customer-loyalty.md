@@ -10,11 +10,6 @@ Our client, a grocery retailer, hired a market research consultancy to append ma
 # Table of contents
 
 - [00. Project Overview](#overview-main)
- — [Context](#overview-context)
- — [Actions](#overview-actions)
- — [Results](#overview-results)
- — [Growth/Next Steps](#overview-growth)
- — [Key Definition](#overview-definition)
 - [01. Data Overview](#data-overview)
 - [02. Modeling Overview](#modeling-overview)
 - [03. Linear Regression](#linreg-title)
